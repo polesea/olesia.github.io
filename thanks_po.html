@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="style_po.css" media="screen"/>
+<title>P_Olesea</title>
+
+<script type="text/javascript">
+function char_random(str) {
+ var elem=str.split("");
+ var exit_str="";
+ var colors=new Array(
+ "00","11","22","33","44","55","66","77","88","99","AA","BB","CC","DD","EE","FF");
+
+ for (var n=0;n<=(elem.length-1);n++) {
+  if (elem[n]==" ") { exit_str+=" "; }
+  if (elem[n]!=" ") {
+    var col1=Math.round(Math.random()*(colors.length-1));
+    var col2=Math.round(Math.random()*(colors.length-1));
+    var col3=Math.round(Math.random()*(colors.length-1));
+    var size=Math.round(Math.random()*4)+3;
+    exit_str+="<font color=\"#"+colors[col1]+colors[col2]+colors[col3]+
+    "\" size=\""+size+"\">"+elem[n]+"</font>";
+  }
+ }
+ document.write(exit_str);
+}
+</script>
+
+</head>
+
+<body>
+	<table width="100%" cellpadding="5" cellspacing="0">
+		<tr>
+			<td id="col11" rowspan="2" valign="bottom" title="Фея доброго настрою :)"> </td>
+			<td id="col2" align=center><div class="title">Good mood Zone</div></td>	
+			<td id="col13" rowspan="2" title="Філіжанка кави..."> </td>
+		</tr>
+		<tr>
+			<td id="col2" align=center> <div class="top-nav" style="margin: 30px 0px;">
+			<a href="index_po.html" id="selected"> home </a>
+			<a href="travel_po.html"> travelling </a>
+			<a href="coffee_po.html"> coffee </a> 
+			<a href="thanks_po.html"> thanks </a>
+			</div> </td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td><p id="p1">Подяки </p>
+			<ul class="ul_1">
+			<li class="li_1"> Дуже вдячна за можливість взяти участь у проекті WOW-Teachers.
+			<li class="li_1"> Велика подяка нашому куратору за отриманні знання. 
+			<li class="li_1"> Багато подяк всім учасникам проекту за взаємопідтримку та гарний настрій.
+			<li class="li_1"> Дякую, що завітали на мою сторінку.
+			</ul>
+			</td>
+			<td> <h1><script type="text/javascript">
+				char_random("... Свято наближається! ... ");
+				</script></h1>
+			<img src="imagess/novogodnjaja_elka_14.gif" alt="New Year Tree">
+			<img id="show1" src="imagess/snowman_PNG9938.png" alt="Snowman" style="width:auto;height:350px; margin:10px; display:none;">
+			<img id="show2" src="imagess/SKU-SB000494-500x500.png" alt="New Year Deer" style="width:auto;height:350px; margin:10px; display:none;">
+			<img id="show3" src="imagess/x_santa3.gif" alt="Santa" style="width:auto;height:200px; margin:10px; display:none;">
+						
+			<br>
+			<p align="center">
+			<button type="button" onclick="document.getElementById('show1').style.display='inline-block'">Покликати гостей!</button>
+			<button type="button" onclick="document.getElementById('show2').style.display='inline-block'">Покликати більше гостей!</button>
+			<button type="button" onclick="document.getElementById('show3').style.display='inline-block'">Хай щастить у Новому році!</button>
+			
+			</p>
+			</td>
+			<td> <p id="p1">Як мене знайти:</p>
+				<ul type="none" title="Мои контакты">
+				<li><a href="https://www.facebook.com/polesea" target="_blank"><img  class="image-list" src="imagess/facebo.png" alt="My_FaceBook" title="My FaceBook" ></a>
+				<li><a href="https://www.instagram.com/polesea_po/?hl=ru" target="_blank"><img  class="image-list" src="imagess/insta.png" alt="My_Istagram" title="My Istagram" ></a>
+				<li><a href="https://www.pinterest.com/polesea/" target="_blank"><img  class="image-list" src="imagess/pinterest.png" alt="My_Pinterest" title="My Pinterest" ></a>
+				<li><a href="mailto:polesea77@gmail.com" target="_blank"><img  class="image-list" src="imagess/email.png" alt="Mail_Me" title="Mail to Me" ></a>
+				</ul> </td>
+		<tr>
+			<td>  </td>
+			<td align=center> <!--Разделитель-->
+				<div class="content-line"></div>
+				
+				&copy; P_Olesea, 2018 </td>
+			<td>  </td>
+	
+	</table>
+	
+   
+   
+   
+   
+   
+   
+   
+</body>
+</html>   
+
+
+<div id="text">  </div>
